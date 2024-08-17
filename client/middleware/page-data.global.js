@@ -33,13 +33,13 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
             const { data, error } = await useFetch(BASE_API_PATH + '/v1/methods/page?path=' + path_array[0], { key: 'page' + path });
 
             if (error?.value?.statusCode == 404) {
-                return navigateTo('/404');
+                //return navigateTo('/404');
             }
         } else {
             const { data, error } = await useFetch(BASE_API_PATH + '/v1/methods/' + path_array[0] + '?path=' + path_array[1], { key: 'page' + path });
 
             if (error?.value?.statusCode == 404) {
-                return navigateTo('/404');
+                //return navigateTo('/404');
             }
         }
 

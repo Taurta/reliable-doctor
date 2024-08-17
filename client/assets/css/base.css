@@ -1,11 +1,6 @@
 @font-face {
-    font-family: 'Geologica';
-    src: url('../fonts/Geologica/Geologica.ttf');
-}
-
-@font-face {
-    font-family: 'Unbounded';
-    src: url('../fonts/Unbounded/Unbounded.ttf');
+    font-family: 'Noto';
+    src: url('../fonts/Noto_Serif_HK/NotoSerifHK-VariableFont_wght.ttf');
 }
 
 * {
@@ -14,9 +9,12 @@
 
 body {
     margin: 0;
-    background-color: #FFF;
-    color: #101014;
-    font-family: 'Geologica';
+
+}
+
+.app-wrapper {
+    background-color: var(--bg);
+    font-family: 'Noto';
     color: var(--text);
 }
 
@@ -35,4 +33,8 @@ a {
 
 a:hover {
     color: var(--accent);
+}
+
+.n-scrollbar > .n-scrollbar-rail.n-scrollbar-rail--vertical > .n-scrollbar-rail__scrollbar, .n-scrollbar + .n-scrollbar-rail.n-scrollbar-rail--vertical > .n-scrollbar-rail__scrollbar {
+    z-index: 110;
 }

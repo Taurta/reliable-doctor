@@ -2,8 +2,8 @@
 :root {
     /* colors */
     --text: #2e2e2e;
-    --accent: blue;
-    --light-accent: #bec1eb;
+    --accent: #C40707;
+    --light-accent: #d84343;
     --lock: #ededed;
     --lock-text: #a1a1a1;
     --error: #e32e2e;
@@ -31,8 +31,8 @@
 
 :root .app-wrapper.monochrome {
     --text: #2e2e2e;
-    --accent: blue;
-    --light-accent: #bec1eb;
+    --accent: #6d6d6d;
+    --light-accent: #757575;
     --lock: #ededed;
     --lock-text: #a1a1a1;
     --error: #2e2e2e;
@@ -40,9 +40,9 @@
 }
 
 :root .app-wrapper.dark {
-    --text: #c5c5c5;
-    --accent: #cacaca;
-    --light-accent: #33343f;
+    --text: #fff;
+    --accent: #adadad;
+    --light-accent: #cacaca;
     --lock: #2e2e2e;
     --lock-text: #2e2e2e;
     --error: #e32e2e;
@@ -50,9 +50,9 @@
 }
 
 :root .app-wrapper.blue {
-    --text: #205593;
-    --accent: #205593;
-    --light-accent: #a0c6ff;
+    --text: #112e4e;
+    --accent: #1a4572;
+    --light-accent: #2867aa;
     --lock: #d6e4fa;
     --lock-text: #a1a1a1;
     --error: #e32e2e;
@@ -72,7 +72,7 @@
     --h4: 40px;
     --h4_lh: 48px;
 
-    --h5: 32px;
+    --h5: 28px;
     --h5_lh: 40px;
 
     --text_size: 20px;

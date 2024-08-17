@@ -30,10 +30,10 @@ import {
 
 const themeOverrides = {
     common: {
-        primaryColor: '#0000ff',
+        primaryColor: '#C40707',
         primaryColorHover: '#bec1eb',
         primaryColorPressed: '#bec1eb',
-        primaryColorSuppl: '#0000ff',
+        primaryColorSuppl: '#C40707',
     },
 }
 

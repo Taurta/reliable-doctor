@@ -94,16 +94,17 @@ function reset() {
 <style>
 .visually-impaired {
 	background-color: #ededed;
+	color: #2e2e2e;
 	padding: 20px;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
 	column-gap: 40px;
 }
 
 .visually-impaired-group {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	column-gap: 20px;
 }
 
@@ -119,7 +120,7 @@ function reset() {
 .visually-impaired-color-group {
 	column-gap: 9px;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	height: 50px;
 }
 
