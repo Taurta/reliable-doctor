@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Geologica';
+    src: url('../fonts/Geologica/Geologica.ttf');
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/Unbounded/Unbounded.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+    color: #101014;
+    font-family: 'Geologica';
+    color: var(--text);
+}
+
+.container {
+    width: 100%;
+    max-width: 1820px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--accent);
+}
