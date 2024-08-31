@@ -68,7 +68,7 @@ h1.main-info-title {
     font-size: 4.8vw;
     line-height: 1;
     margin-bottom: 1vw;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .main-info-title::after {
@@ -78,7 +78,7 @@ h1.main-info-title {
 .main-info-text {
     font-size: 4.1vw;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .main-info-text span {

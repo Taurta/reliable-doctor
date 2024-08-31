@@ -3,6 +3,18 @@
     src: url('../fonts/Noto_Serif_HK/NotoSerifHK-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -14,8 +26,37 @@ body {
 
 .app-wrapper {
     background-color: var(--bg);
-    font-family: 'Noto';
+    font-family: 'Montserrat';
     color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto';
+}
+
+h2 {
+    font-size: var(--h2);
+    line-height: var(--h2_lh);
+}
+
+h3 {
+    font-size: var(--h3);
+    line-height: var(--h3_lh);
+}
+
+h4 {
+    font-size: var(--h4);
+    line-height: var(--h4_lh);
+}
+
+h5 {
+    font-size: var(--h5);
+    line-height: var(--h5_lh);
+}
+
+h6 {
+    font-size: var(--h6);
+    line-height: var(--h6_lh);
 }
 
 .container {

@@ -2,7 +2,7 @@
     <nuxt-link v-if="href" class="button">
 
     </nuxt-link>
-    <button v-else class="button">
+    <button v-else class="button" :class="type">
         <slot />
     </button>
 </template>
@@ -13,6 +13,10 @@ const props = defineProps({
         type: String,
         default: '',
     },
+    type: {
+        type: String,
+        default: '',
+    }
 })
 </script>
 
@@ -32,6 +36,19 @@ const props = defineProps({
 
 .button:hover {
     background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.button.second {
+    color: var(--light-accent);
+    background-color: var(--bg);
+    border: 1px solid var(--light-accent);
+}
+
+.button.second:hover {
+    color: var(--bg);
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
     box-shadow: 0 0 10px var(--accent);
 }
 </style>
