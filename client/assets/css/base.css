@@ -59,6 +59,10 @@ h6 {
     line-height: var(--h6_lh);
 }
 
+section {
+    padding-top: 150px;
+}
+
 .container {
     width: 100%;
     max-width: 1820px;

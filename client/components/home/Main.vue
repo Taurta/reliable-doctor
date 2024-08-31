@@ -41,6 +41,10 @@ import {
 </script>
 
 <style>
+#main {
+    padding-top: 0;
+}
+
 #main .container {
     min-height: 100vh;
     display: flex;

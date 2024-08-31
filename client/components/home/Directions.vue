@@ -58,6 +58,10 @@ const directions = [
 </script>
 
 <style>
+#directions {
+    padding-top: 0;
+}
+
 .directions {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

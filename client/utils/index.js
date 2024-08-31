@@ -159,3 +159,7 @@ export function num_word(value, words, show = false) {
 
     return out;
 }
+
+export function numberFomat(number) {
+    return String(number).padStart(2, '0');
+}
