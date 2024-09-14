@@ -63,7 +63,7 @@ add_action( 'wp_enqueue_scripts', 'your_startup_scripts' );
 /**
  * Custom-posts.
  */
-require get_template_directory() . '/inc/custom-posts.php';
+//require get_template_directory() . '/inc/custom-posts.php';
 
 /**
  * API.

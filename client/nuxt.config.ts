@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   app: {
-    cdnURL: '/wp-content/themes/wp-nuxt-theme/client/.output/public/',
+    cdnURL: '/wp-content/themes/your-startup/client/.output/public/',
   },
   experimental: {
     payloadExtraction: false

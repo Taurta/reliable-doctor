@@ -1,11 +1,11 @@
 <template>
-    <section id="stages">
+    <section id="stages" v-if="data?.length > 0">
         <div class="container">
             <h2>
                 Как вызвать врача на дом?
             </h2>
             <div class="stages">
-                <div v-for="stage, index in stages" class="stage" :class="stage?.right ? 'right' : ''" :key="index">
+                <div v-for="stage, index in data" class="stage" :class="stage?.right ? 'right' : ''" :key="index">
                     <h3>
                         {{ stage.title }}
                     </h3>
@@ -18,30 +18,12 @@
 </template>
 
 <script setup>
-const stages = [
-    {
-        right: true,
-        title: 'Оставьте заявку',
-        text: 'Вы можете оставить заявку любым удобым для вас способом: по номеру телефона +7 (999) 999 99-99, написать нам на почту email@mail.ru или через с помощью формы на сайте нажав на кнопку “Вызовите врача на дом”'
-    },
-    {
-        title: 'Мы подберем удобное для вас время',
-        text: 'Мы свяжемся с вами уточним все детали вызова, подберем удобное для вас время.'
-    },
-    {
-        title: 'Напомним о вызове',
-        text: 'Мы позвоним вам за час до выезда и подтвердим все детали.'
-    },
-    {
-        title: 'Приедем и проведем процедуры',
-        text: 'Врач приедет к вам домой, осмотрит вас, проведет необходимые процедуры, и даст рекомендации по лечению и уходу.'
-    },
-    {
-        right: true,
-        title: 'Оплата',
-        text: 'Вы можете легко и удобно оплатить услуги, используя удобный для Вас способ, будь то наличные, банковская карта или онлайн-перевод.'
-    },
-]
+const props = defineProps({
+    data: {
+        type: Array,
+        default: () => []
+    }
+})
 </script>
 
 <style>
@@ -71,6 +53,10 @@ const stages = [
 .stage-text {
     font-size: var(--text_size);
     line-height: var(--text_size_lh);
+}
+
+.stage-text a {
+    white-space: nowrap;
 }
 
 .stage-number {

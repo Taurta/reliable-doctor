@@ -1,4 +1,4 @@
-const BASE_API_PATH = 'https://your-startup.space';
+const BASE_API_PATH = 'https://надежный-доктор.рф';
 
 export default defineNuxtRouteMiddleware(async (to, from) => {
     let path = to.path == '/' ? '/home' : to.path;

@@ -3,14 +3,12 @@
         <div class="container">
             <div class="main-info">
                 <div class="main-info-sub-title">
-                    Клиника
+                    {{ data?.sub_title }}
                 </div>
                 <h1 class="main-info-title">
-                    НАДЕЖНЫЙ ДОКТОР
+                    {{ data?.title }}
                 </h1>
-                <div class="main-info-text">
-                    ЭТО <span>ПОДДЕРЖКА</span> И <span>ЗАБОТА</span>
-                </div>
+                <div class="main-info-text" v-html="data?.text"></div>
                 <div class="main-heart">
                     <ph-hand-heart weight="thin"/>
                     <ph-heart class="heart" weight="fill"/>
@@ -38,6 +36,13 @@ import {
     PhHandHeart,
     PhHeart
 } from '@phosphor-icons/vue'
+
+const props = defineProps({
+    data: {
+        type: Object,
+        default: () => {}
+    }
+})
 </script>
 
 <style>
@@ -53,11 +58,14 @@ import {
     flex-wrap: wrap;
     padding: calc(5vw + 20px) 20px;
     position: relative;
+    flex-direction: column;
+    gap: 20vh;
 }
 
 .main-info {
     position: relative;
     width: 100%;
+    padding-top: 10vh;
 }
 
 .main-info-sub-title {
